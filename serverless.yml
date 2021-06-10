@@ -14,10 +14,10 @@ provider:
 custom:
   esbuild:
     plugins : ./plugins.js
-    packager: yarn
+    packager: npm
     bundle: true
-    minify: true
-    sourcemap: false
+    minify: false
+    sourcemap: true
     keepNames: true
 
 functions:
