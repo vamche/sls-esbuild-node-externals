@@ -1,7 +1,8 @@
 {
   "main": "handler.js",
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "openpgp": "^5.0.0-3"
   },
   "devDependencies": {
     "@types/lodash": "4.14.91",
