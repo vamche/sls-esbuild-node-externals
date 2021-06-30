@@ -1,6 +1,7 @@
 {
   "main": "handler.js",
   "dependencies": {
+    "bestzip": "^2.2.0",
     "lodash": "^4.17.4",
     "openpgp": "^5.0.0-3"
   },
@@ -9,7 +10,7 @@
     "@types/node": "^11.13.0",
     "esbuild-node-externals": "^1.2.0",
     "serverless": "^2.36.0",
-    "serverless-esbuild": "^1.12.0",
+    "serverless-esbuild": "^1.15.0",
     "serverless-offline": "^6.4.0"
   },
   "scripts": {

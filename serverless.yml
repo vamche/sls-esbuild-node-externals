@@ -13,10 +13,7 @@ provider:
 
 custom:
   esbuild:
-    # plugins : ./plugins.js
-    external:
-       - lodash
-       - openpgp
+    plugins : ./plugins.js
     packager: npm
     bundle: true
     minify: false
