@@ -5,7 +5,7 @@ plugins:
   - serverless-offline
 
 package:
-  individually: true
+  individually: false
 
 provider:
   name: aws
@@ -14,12 +14,15 @@ provider:
 custom:
   esbuild:
     plugins : ./plugins.js
-    packager: npm
+    packager: yarn
     bundle: true
     minify: false
     sourcemap: true
     keepNames: true
-
+    packagerOptions:
+      scripts:
+        - npm install -g clean-modules
+        - clean-modules -y --exclude \"test.js\" \"**/*.map.js\" --include \"**/*.d.ts\"
 functions:
   hello1:
     handler: hello1.handler

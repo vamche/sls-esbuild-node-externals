@@ -10,7 +10,7 @@
     "@types/node": "^11.13.0",
     "esbuild-node-externals": "^1.2.0",
     "serverless": "^2.36.0",
-    "serverless-esbuild": "^1.15.0",
+    "serverless-esbuild": "^1.15.1",
     "serverless-offline": "^6.4.0"
   },
   "scripts": {
